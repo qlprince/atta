@@ -1,0 +1,51 @@
+body {
+  font: 12px Helvetica;
+  background: #999999;
+}
+
+#main {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-flow: row;
+
+  .article {
+    margin: 4px;
+    padding: 5px;
+    border-radius: 2pt;
+    flex: 6 1 60%;
+    order: 2;
+  }
+
+  .nav {
+    margin: 4px;
+    padding: 5px;
+    border-radius: 2pt;
+    flex: 3 6;
+    order: 1;
+
+  }
+
+  .rotate {
+    -ms-transform: rotate(90deg); /* IE 9 */
+    -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
+    transform: rotate(-90deg);
+  }
+}
+
+/* Too narrow to support three columns */
+@media all and (max-width: 640px) {
+  #main, #page {
+    flex-direction: column;
+  }
+
+  #main > .article, #main > .nav, #main > .aside {
+    /* Return them to document order */
+    order: 0;
+  }
+
+  #main > .nav, #main > .aside, .header, .footer {
+    min-height: 50px;
+    max-height: 50px;
+  }
+}
