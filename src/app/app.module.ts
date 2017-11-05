@@ -7,7 +7,6 @@ import { AppComponent } from './app.component';
 import { HeaderComponentComponent } from './header-component/header-component.component';
 import {NoopAnimationsModule} from "@angular/platform-browser/animations";
 import {MatButtonModule, MatCardModule, MatSidenavModule, MatToolbarModule} from "@angular/material";
-import {SideNav1ComponentComponent} from "./side-nav-1-component/side-nav-1-component.component";
 import {Main1ComponentComponent} from "./main-1-component/main-1-component.component";
 
 @NgModule({
