@@ -1,38 +1,35 @@
-html {
-  font-family: sans-serif;
-}
-body {
-  margin: 0;
-}
+
 header {
   background: purple;
   height: 100px;
 }
-h1 {
+.header {
   text-align: center;
   color: white;
   line-height: 100px;
   margin: 0;
 }
-section {
+.main-content {
   display: flex;
+  margin-top: 10px;
 }
-article {
+aside {
   padding: 10px;
   margin: 10px;
-  background: aqua;
   flex: 1;
+
+  display: block;
+  position: relative;
+  //margin: 40px 0;
 }
 
-article:nth-of-type(2) {
+aside:nth-of-type(2) {
   flex: 10;
 }
-
 
 mat-card  {
   background-color: orange;
 }
-
 
 #flip {
   -webkit-transform: rotate(-90deg);
@@ -40,5 +37,9 @@ mat-card  {
   -o-transform: rotate(-90deg);
   -ms-transform: rotate(-90deg);
   transform: rotate(-90deg);
-  margin-top: 20px;
+  margin-top: 200px;
+}
+
+.side {
+  margin-right: 10px;
 }
